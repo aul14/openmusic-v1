@@ -11,7 +11,7 @@ class SongsService {
 
     //fungsi create
     async addSong({ title, year, performer, genre, duration, album_id }) {
-        const id = nanoid(16);
+        const id = `song-${nanoid(16)}`;
         const createdAt = new Date().toISOString();
         const updatedAt = createdAt;
 
